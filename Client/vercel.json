@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://recipe-generator-cg8z.onrender.com/api/:path*"
+    }
+  ]
+}
