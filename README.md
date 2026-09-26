@@ -40,7 +40,12 @@ This application flips the entire cooking workflow:
 * Upload a food/fridge image
 * AI detects ingredients automatically
 
-### ✍️ Editable Ingredient List
+### ✍️ Free-Form Text Input
+* Type or paste ingredients directly (comma-separated or one per line)
+* Alternative input method switchable via tabs ("Type ingredients" / "Upload photo")
+* Fast AI detection & smart parsing with quantity extraction
+
+### 📝 Editable Ingredient List
 
 * Remove incorrect items
 * Add missing ingredients manually

@@ -3,6 +3,7 @@ const router = express.Router();
 const upload = require("../middleware/upload");
 const {
   analyzeImage,
+  parseIngredientsText,
   generateRecipe,
   generateMultipleRecipes,
   saveRecipe,
@@ -13,6 +14,7 @@ const {
 
 // ── AI Routes ────────────────────────────────────────────────
 router.post("/analyze",     upload.single("image"), analyzeImage);
+router.post("/parse-text",  parseIngredientsText);
 router.post("/generate",    generateRecipe);
 router.post("/suggestions", generateMultipleRecipes);
 
