@@ -44,7 +44,7 @@ function RecipeCard({ recipe, isSaved = false }) {
       <div className="recipe-card-header">
         <h3>{recipe.title}</h3>
         {recipe.difficulty && (
-          <span className={`difficulty-badge${recipe.difficulty.toLowerCase()}`}>
+          <span className={`difficulty-badge ${recipe.difficulty.toLowerCase()}`}>
             {recipe.difficulty}
           </span>
         )}

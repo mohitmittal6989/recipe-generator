@@ -31,7 +31,7 @@ function RecipeDisplay({ recipe, onRetry }) {
         {normalizedRecipe.ingredients && normalizedRecipe.ingredients.length > 0 ? (
           <ul className="ingredients-list">
             {normalizedRecipe.ingredients.map((ing, i) => (
-              <li key={i} className="ingredient-row">
+              <li key={i} className="recipe-ingredient-row ingredient-row">
                 <div>
                   <span className="ing-name">{ing.name || "Ingredient"}</span>
                   {ing.quantity && <span className="ing-quantity"> — required: {ing.quantity}</span>}

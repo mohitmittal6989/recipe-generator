@@ -7,14 +7,14 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-icon"></span>
+          <span className="logo-icon">🍳</span>
           AI Recipe Generator
         </Link>
         <div className="navbar-links">
-          <Link to="/" className={`nav-link${location.pathname === "/" ? "active" : ""}`}>
+          <Link to="/" className={`nav-link ${location.pathname === "/" ? "active" : ""}`.trim()}>
             Home
           </Link>
-          <Link to="/saved" className={`nav-link${location.pathname === "/saved" ? "active" : ""}`}>
+          <Link to="/saved" className={`nav-link ${location.pathname === "/saved" ? "active" : ""}`.trim()}>
             Saved Recipes
           </Link>
         </div>

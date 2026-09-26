@@ -34,7 +34,7 @@ function IngredientList() {
       {ingredients.length > 0 && (
         <div className="ingredient-tags">
           {ingredients.map((ingredient, index) => (
-            <div key={index} className="ingredient-row">
+            <div key={index} className="ingredient-item-row ingredient-row">
               <div className="ingredient-tag">
                 {ingredient.name}
                 <button className="remove-btn" onClick={() => removeIngredient(index)}>

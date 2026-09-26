@@ -35,7 +35,7 @@ function ImageUploader() {
       </p>
 
       <div
-        className={`drop-zone${dragActive ? "drag-active" : ""}${preview ? "has-preview" : ""}`}
+        className={`drop-zone ${dragActive ? "drag-active" : ""} ${preview ? "has-preview" : ""}`.trim()}
         onDrop={handleDrop}
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
@@ -45,7 +45,7 @@ function ImageUploader() {
           <img src={preview} alt="Uploaded food" className="preview-image" />
         ) : (
           <div className="drop-zone-content">
-            <span className="upload-icon"></span>
+            <span className="upload-icon">📸</span>
             <p>Drag & drop your food photo here</p>
             <p className="or-text">or click to browse</p>
           </div>

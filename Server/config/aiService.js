@@ -72,7 +72,7 @@ async function generateAIText(prompt, systemInstruction = "") {
 
   // Fallback to Groq
   if (groq) {
-    const models = ["qwen/qwen3.8-27b", "llama-3.3-70b-versatile", "openai/gpt-oss-120b"];
+    const models = ["qwen/qwen3.8-27b", "openai/gpt-oss-120b"];
     for (const model of models) {
       try {
         const messages = [];
